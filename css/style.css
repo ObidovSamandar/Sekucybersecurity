@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, small {
 }
 
 #main-header {
-  background-image: url(./imgs/bg-.jpg);
+  background-image: url(/imgs/bg-.jpg);
   height: 750px;
   width: 100%;
   background-repeat: no-repeat;
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6, small {
 #website-security-content-spart {
   position: relative;
   height: 1000px;
-  background-image: url(./imgs/3.png);
+  background-image: url(/imgs/3.png);
   background-size: 500px 800px;
   background-repeat: no-repeat;
 }
@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6, small {
 
 #high-performace {
   height: 610px;
-  background: url("./imgs/performance-bg.jpg") no-repeat;
+  background: url("/imgs/performance-bg.jpg") no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -850,7 +850,7 @@ h1, h2, h3, h4, h5, h6, small {
 }
 
 #chooseup {
-  background-image: url(./imgs/choose-bg.jpg);
+  background-image: url(/imgs/choose-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1003,7 +1003,7 @@ h1, h2, h3, h4, h5, h6, small {
 }
 
 #footer-content {
-  background: url(./imgs/footer-bg.jpg) no-repeat;
+  background: url(/imgs/footer-bg.jpg) no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -1205,7 +1205,7 @@ h1, h2, h3, h4, h5, h6, small {
   }
   #high-performace {
     height: 1420px;
-    background: url("./imgs/performance-bg.jpg") no-repeat;
+    background: url("/imgs/performance-bg.jpg") no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -1370,7 +1370,7 @@ h1, h2, h3, h4, h5, h6, small {
   }
   #high-performace {
     height: 1330px;
-    background: url("./imgs/performance-bg.jpg") no-repeat;
+    background: url("/imgs/performance-bg.jpg") no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -1519,7 +1519,7 @@ h1, h2, h3, h4, h5, h6, small {
   }
   #high-performace {
     height: 850px;
-    background: url("./imgs/performance-bg.jpg") no-repeat;
+    background: url("/imgs/performance-bg.jpg") no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -1628,7 +1628,7 @@ h1, h2, h3, h4, h5, h6, small {
   }
   #high-performace {
     height: 610px;
-    background: url("./imgs/performance-bg.jpg") no-repeat;
+    background: url("/imgs/performance-bg.jpg") no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
