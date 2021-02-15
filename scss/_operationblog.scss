@@ -1,0 +1,91 @@
+#opertion-center-content{
+    padding: 85px 0;
+}
+#opertion-center-content{
+    .operation-center-img{
+        img{
+            width: 100%;
+        }
+    }
+    .manualproject-content-info{
+        h2{
+            color: $headings-color;
+        }
+        p{
+            color: $headings-color;
+        }
+        .manualproject-list{
+            &__item{
+                background-color: #FDEFF4;
+            }
+        }
+    }
+}
+
+
+#lastest-blog-content{
+    padding: 10px  0 90px 0;
+
+   .last-blog-content-list{
+       padding: 45px 0 0 0;
+    &__item{
+        .content__item__info{
+            position: relative;
+            @include transitionstyle(all,.3s,ease,0s);
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+            .cinfo{
+                position: absolute;
+                bottom: 30px;
+                left: 50%;              
+                transform: translateX(-50%);
+                width: 85%;
+                p{
+                    
+                    margin: 0;
+                    a{
+                        color: $white-color;
+                    }
+                }
+                h4{
+                    color: $white-color;
+                }
+                .readmore-btn-content{
+                    color: $darkred-color;
+                    font-weight: 600;
+                }
+            }
+            .title-info{
+                position: absolute;
+                top: 20px;
+                background-color: $white-color;
+                padding: 10px 15px;
+                a{
+                    color: $ptopheader-color;
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+            }
+        }
+        .content__item__info::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(14, 1, 41, 0.99));
+        }
+        .content__item__info:hover{
+            transform: translateY(-5px);
+            .title-info{
+                a{
+                    color: $darkred-color;
+                }
+            }
+        }
+    }
+   }
+}

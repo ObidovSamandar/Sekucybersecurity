@@ -1,0 +1,180 @@
+#website-security-content-fpart{
+    padding: 50px 0;
+}
+.website-security{
+    &__title{
+        font-size: 40px;
+        color: $headings-color;
+        font-weight: 600;
+    }
+}
+
+#website-security-content-spart{
+    position: relative;
+    height: 1000px;
+    background-image: url(/imgs/3.png);
+    background-size: 500px 800px;
+    background-repeat: no-repeat;
+}
+.website-security-content-spart__info{
+    padding: 0 0 80px 0;
+}
+.security-info{
+    background-color: $websecuritycardbg-color;
+    padding: 30px;
+    @include transitionstyle(all,.3s,ease,0s);
+    cursor: pointer; 
+
+    &__icon{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $darkred-color;
+        @include transitionstyle(all,.4s,ease,0s);
+        i{
+            color: $white-color;
+        }
+        i::before{
+            margin-left: 0;
+            font-size: 30px;
+            line-height: 45px;
+        }
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 600;
+        color: $headings-color;
+        letter-spacing: -1px;
+    }
+    &__text{
+        margin: 10px 0 0 0;
+        font-size: 15px;
+        color: $ptopheader-color;
+        font-weight: 400;
+    }
+}
+.security-info:hover{
+    transform: translateY(-5px);
+}
+.security-info:hover .security-info__icon{
+    transform: rotateY(360deg);
+}
+
+#website-security-content-thpart{
+    img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+}
+
+.skills-content{
+    &__img{
+        img{
+            width: 100%;
+        }
+    }
+    &__infos{
+        &__info{
+            background-color: $white-color;
+            position: relative;
+            left: -100px;
+            top: 100px;
+            padding: 50px;
+            z-index: 4;
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            &__title{
+                font-size: 37px;
+                color: $headings-color;
+                font-weight: 600;
+                letter-spacing: -1px;
+            }
+            .bars-info{
+                position: relative;
+                h4{
+                    color: $ptopheader-color;
+                    font-size: 20px;
+                    letter-spacing: -1px;
+                    font-weight: 600;
+                }
+                .progress{
+                    height: 9px;
+                    .progress-bar{
+                        background-color: $darkred-color;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            .bars-info.development-bar{
+                .percentage{
+                    position: absolute;
+                    top: 0;
+                    left:46%;
+                    font-size: 12px;
+                    background-color: $darkred-color;
+                    color: $white-color;
+                    padding: 3px 5px;
+                    border-radius: 3px;
+                }
+                .percentage::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    left: 39%;
+                    width: 7px;
+                    height: 7px;
+                    background-color:$darkred-color;
+                    transform: rotate(45deg);
+                }
+            }
+            .bars-info.design-bar{
+                .percentage{
+                    position: absolute;
+                    top: 0;
+                    left:71%;
+                    font-size: 12px;
+                    background-color: $darkred-color;
+                    color: $white-color;
+                    padding: 3px 5px;
+                    border-radius: 3px;
+                }
+                .percentage::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    left: 39%;
+                    width: 7px;
+                    height: 7px;
+                    background-color:$darkred-color;
+                    transform: rotate(45deg);
+                }
+            }
+            .bars-info.marketing-bar{
+                .percentage{
+                    position: absolute;
+                    top: 0;
+                    left:91%;
+                    font-size: 12px;
+                    background-color: $darkred-color;
+                    color: $white-color;
+                    padding: 3px 5px;
+                    border-radius: 3px;
+                }
+                .percentage::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    left: 39%;
+                    width: 7px;
+                    height: 7px;
+                    background-color:$darkred-color;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,9 @@
+@mixin transitionstyle($tp,$td,$ttf,$tdl){
+    transition: $tp $td $ttf $tdl;
+}
+@mixin btnstyle($tpb,$tlr,$cl) {
+    padding: $tpb $tlr;
+    background-color: $cl;
+    color: $cl;
+
+}

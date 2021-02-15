@@ -1,0 +1,88 @@
+#askedquestions-content{
+    padding: 65px 0;
+}
+.askedquestions-content-info{
+    padding: 40px 0;
+    &__questions{
+        .middle-accordion{
+            position: relative;
+            top: 100px;
+        }
+        #accordion{
+            .card{
+                border: none;
+                margin-bottom: 20px;
+                box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+               .card-header{
+                   background-color: $white-color;
+                   border: none;
+                   a{
+                       color: $headings-color;
+                       font-weight: 600;
+                   }
+               }
+            }
+        }
+    }
+}
+.askedquestions-image{
+    img{
+        width: 100%;
+        position: relative;
+    }
+}
+
+#chooseup{
+    background-image: url(/imgs/choose-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    .choosebg{
+        background-color: rgba($sectionbg-color,.7);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .chooseup-wrapper{
+        padding: 100px 0;
+
+        .chooseup-content__info{
+            background-color: $sectionbg-color;
+            padding: 50px;
+            h2,p{
+                color: $white-color;
+            }
+            h2{
+                font-weight: 700;
+                font-size: 45px;
+            }
+            p{
+                font-size: 15px;
+            }
+            &__list{
+                a{
+                    color: $white-color;
+                    i{
+                        width: 25px;
+                        text-align: center;
+                        height: 25px;
+                        line-height: 25px;
+                        background-color: #221b31;
+                        color: $darkred-color;
+                        border-radius: 50%;
+                        font-size: 14px;
+                        @include transitionstyle(all,.3s,ease,0s);
+                    }
+                }
+                a:hover{
+                    i{
+                        background-color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}

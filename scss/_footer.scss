@@ -1,0 +1,101 @@
+#footer-content{
+    background:url(/imgs/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+}
+#footer-content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba($headings-color,0.9);
+}
+
+.footer-info{
+    &__list{
+        h4{
+            color: $white-color;
+            display: inline-block;
+            border-bottom: 2px solid $white-color;
+            padding-bottom: 5px;
+        }
+        .flist{
+            list-style: none;
+            padding-left: 0;
+
+            &__item{
+                @include transitionstyle(all,.3s,ease,0s);
+                .inner-flist{
+                    li{
+                        a{
+                            i{
+                                color: $darkred-color;
+                                font-size: 1
+                                3px;
+                            }
+                        }
+                    }
+                    li:last-child{
+                        a{
+                            color: $white-color;
+                            font-size: 15px;
+                        }
+                        a:last-child{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            &__item:hover{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.footer-lthree-info{
+    &__list{
+        h4{
+            color: $white-color;
+            position: relative;
+            display: inline-block;
+        }
+        h4::before{
+            position: absolute;
+            content: "";
+            width: 35%;
+            bottom: -5px;
+            height: 2px;
+            background-color: $white-color;
+        }
+        ul{
+            list-style: none;
+            li{
+                a{
+                    @include transitionstyle(all,.3s,ease,0s);
+                    color:$white-color;
+                    font-size: 14px;
+                    i{
+                        color: $darkred-color;
+                    }
+                }
+                a:hover{
+                   margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+#last-footer{
+    background-color: $footerbg-color;
+    padding: 15px 0;
+    color: $white-color;
+    p{
+        font-size: 15px;
+        font-weight: 200;
+    }
+}

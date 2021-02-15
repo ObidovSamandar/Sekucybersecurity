@@ -1,0 +1,197 @@
+#team-content{
+    padding: 70px 0 50px 0;
+}
+.team__member{
+    padding: 60px 0 0px 0;
+    height: 450px;
+}
+.team__list{
+    &__item{
+        position: relative;
+        &__info{
+            position: absolute;
+            z-index:1;
+            cursor: pointer;
+            @include transitionstyle(all,.3s,ease,0s);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            &__title{
+                position: absolute;
+                background-color: $white-color;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -40px;
+                padding: 15px;
+                width: 190px;
+                z-index: 1;
+                border: 1px solid $white-color;
+                box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+                @include transitionstyle(all,.3s,ease,0s);
+                text-align: center;
+                h4{
+                    margin: 0;
+                    color: $headings-color;
+                }
+                p{
+                    margin: 0;
+                    color: $darkred-color;
+                    font-weight: 500;
+                }
+            }
+            &__socialmedia{
+                position: absolute;
+                z-index: 0;
+                bottom: 0px;
+                left: 60%;
+                width: 170px;
+                transform: translateX(-60%);
+                li{
+                    display: flex;
+                    margin-right: 10px;
+                    position: relative;
+                    
+                    a{
+                        background-color: $headings-color;
+                        width: 30px;
+                        @include transitionstyle(all,.3s,ease,0s);
+                        height: 30px;
+                        text-align: center;
+                        border-radius: 50%;
+                        
+                        i{
+                            line-height: 30px;
+                            color: $white-color;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                li:nth-child(1){
+                    bottom: 0px;
+                    @include transitionstyle(all,.2s,ease,0s);
+                }
+                li:nth-child(2){
+                    bottom: 0px;
+                    @include transitionstyle(all,.2s,ease,0.2s);
+                }
+                li:nth-child(3){
+                    bottom: 0px;
+                    @include transitionstyle(all,.2s,ease,0.255s);
+                }
+                li:nth-child(4){
+                    bottom: 0px;
+                    @include transitionstyle(all,.2s,ease,0.3s);
+                }
+                li:hover{
+                    a{
+                        background-color: $darkred-color;
+                    }
+                }
+            }
+        }
+        &__info::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            transform: scaleX(0);
+            background-color: rgba($darkred-color,0.6);
+            @include transitionstyle(all,.3s,ease,0s);
+            transform-origin: left;
+        }
+        &__info:hover::before{
+            transform: scaleX(1);
+        }
+        &__info:hover{
+            transform: translateY(-5px);
+            .team__list__item__info__title{
+                width: 100%;
+            }
+        }
+        &__info:hover{
+            .team__list__item__info__socialmedia{
+                li:nth-child(1){
+                    bottom: 70px;
+                }
+                li:nth-child(2){
+                    bottom: 70px;
+                }
+                li:nth-child(3){
+                    bottom: 70px;
+                }
+                li:nth-child(4){
+                    bottom: 70px;
+                }
+            }
+        }
+    }
+}
+
+
+
+#manualproject-content{
+    padding: 85px 0;
+    background-color: $sectionbg-color;
+}
+.manualproject-item{
+    img{
+        width: 100%;
+    }
+}
+.manualproject-content-info{
+    h2{
+        color:$white-color;
+    }
+    p{
+        color: $white-color;
+        font-size: 15px;
+    }
+}
+.manualproject-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-gap: 25px;
+
+    &__item{
+        background-color: $white-color;
+        padding: 8px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        a{
+            @include transitionstyle(all,.4s,ease,0s);
+            color: $ptopheader-color;
+            font-weight: 500;
+            i{
+                margin-right: 5px;
+                color: $darkred-color;
+                font-weight: 500;
+                @include transitionstyle(all,.4s,ease,0s);
+            }
+        }
+    }
+    &__item::before{
+        content: "";
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: linear-gradient(to bottom right, #d2044d, #ff5e68);
+        position: absolute;
+        @include transitionstyle(all,.4s,ease,0s);
+    }
+    &__item:hover::before{
+        width: 100%;
+    }
+    &__item:hover{
+        a{
+            color: $white-color;
+            i{
+                color: $white-color;
+            }
+        }
+    }
+}

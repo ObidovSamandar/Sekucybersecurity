@@ -1,0 +1,70 @@
+#high-performace{
+    height: 610px;
+    background: url('/imgs/performance-bg.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.high-performange-outerbg{
+    width: 100%;
+    height: 610px;
+    position: absolute;
+    z-index: 0;
+    background-color: rgba($cardsbg-color,.7);
+}
+#high-performance-content{
+    padding: 85px 0 70px 0;
+    width: 100%;
+    height: 100%;
+    color: $white-color;
+}
+#high-performance-content{
+    .website-security{
+        h2{
+            color: $white-color;
+        }
+    }
+
+
+.performace-slider{
+        padding: 45px 0;
+        &__item{
+            &__info{
+                background-color: $cardsbg-color;
+                padding: 30px;
+                text-align: center;
+                @include transitionstyle(all,.3s,ease,0s);
+                .security-info__icon{
+                    margin: 0 auto;
+                }
+
+                h4{
+                    color: $white-color;
+                    letter-spacing: 0;
+                }
+                p{
+                    color: $white-color;
+                }
+                a{
+                    color: $darkred-color;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+            &__info:hover{
+                transform: translateY(-1.5px);
+                cursor: pointer;
+                background-color: $white-color;
+                h4,p{
+                    color: $cardsbg-color;
+                }
+            }
+            &__info:hover{
+                .security-info__icon{
+                    transform: rotateY(360deg);
+                }
+            }
+        }
+    }
+}
+
